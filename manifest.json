@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Bike Route Planner",
+    "description": "Create custom bike routes tailored to your preferences. Input route length, intensity, and more for the perfect biking path for your needs.",
+    "version": "1.0.0",
+    "permissions": [
+      "geolocation",
+      "storage",
+      "notifications",
+      "identity",
+      "tabs"
+    ],
+    "host_permissions": [
+      "https://maps.googleapis.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "assets/cycl_16.png",
+      "48": "assets/cycl_16.png",
+      "128": "assets/cycl_16.png"
+    }
+  }
+  
